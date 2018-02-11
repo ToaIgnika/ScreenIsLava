@@ -1,0 +1,45 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.platform {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url("../img/plat.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.counter {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.counter h1 {
+    border: 1px solid #b67930;
+    border-radius: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    margin: 0;
+    display: inline-block;
+    background-color: #e2cfa5;
+    color: white;
+    font-family: 'Lusitana', serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-shadow: 1px 2px #b67930;
+}

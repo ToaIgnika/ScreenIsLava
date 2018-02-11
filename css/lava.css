@@ -1,0 +1,44 @@
+
+
+.lava > div {
+    position: absolute;
+}
+
+/* The waterfall loop
+Key ingredients:
+- Vertically seamless bitmap
+- Background repeat Y
+- Infinite animation which shifts background position vertically
+ */
+.lava-loop {
+    width: 100%;
+    height: 100%;
+
+    background: url("../img/lava.jpg") 0 0 repeat;
+    -moz-animation: lavaloop 130s infinite linear;
+    -webkit-animation: lavaloop 130s infinite linear;
+    -ms-animation: lavaloop 130s infinite linear;
+    -o-animation: lavaloop 130s infinite linear;
+}
+
+@-moz-keyframes lavaloop {
+    0% { background-position:0 0; }
+    /* the end position y must equal bitmap's height */
+    100% { background-position: 0 2000px }
+}
+
+@-webkit-keyframes lavaloop {
+    0% { background-position:0 0; }
+    100% { background-position: 0 2000px; }
+}
+
+@-ms-keyframes lavaloop {
+    0% { background-position:0 0; }
+    100% { background-position: 0 2000px; }
+}
+
+@-o-keyframes lavaloop {
+    0% { background-position:0 0; }
+    100% { background-position: 0 2000px; }
+}
+
