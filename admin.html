@@ -6,6 +6,9 @@
     <title>ScreenIsLava</title>
     <link rel="stylesheet" href="css/lava.css">
     <link rel="stylesheet" href="css/frame.css?v0.006">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="MobileOptimized" content="640">
     <!-- Latest compiled and minified CSS -->
@@ -14,16 +17,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-<div class="alert alert-warning alert-dismissable" id="not_id">
-    <strong>Chilling</strong> Press 'Play' to join the game
-</div>
 <div class="c_navbar">
     <ul>
-        <li><a href="#" id="status_i"><i class="fa fa-home"></i></a></li>
+        <li><a href="#"><i class="fa fa-home"></i></a></li>
         <li><a href="#" id="start_btn"><i class="fa fa fa-play"></i></a></li>
         <li><a href="#"><i class="fa fa-envelope"></i></a></li>
         <li><a href="#" type="button" id="log_a" data-toggle="modal" data-target="#loginModal" ><i id="log_ui" class="fa fa-sign-in" ></i></a></li>
@@ -34,11 +33,11 @@
 <div class="lava">
     <div class="lava-loop"></div>
 </div>
+
 <div class="platform">
     <img src="img/plat.png" id="plat_id" class="img-responsive center" alt="plat">
 </div>
 
-</div>
 <!-- Modal -->
 <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -78,8 +77,10 @@
 
     </div>
 </div>
+
 <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
-<script src="js/engine.js?v0.006"></script>
 <script src="js/fb.js?v0.006"></script>
+<script src="js/enginev2.js?v0.006"></script>
+<script src="js/admin.js?v0.006"></script>
 </body>
 </html>

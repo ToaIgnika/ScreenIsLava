@@ -45,18 +45,33 @@ body{
     color: black;
 }
 
-/* Add a color to the active/current link */
-.c_navbar a.active {
-    background-color: #4CAF50;
-    color: white;
+
+#not_id {
+    position: absolute;
+    bottom: 57px;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 500;
+}
+
+.helper {
+    display: inline-block;
+    height: 0px;
+    vertical-align: middle;
 }
 
 .platform {
     position: absolute;
+    z-index: 99;
     width: 100%;
     height: 100%;
-    margin: auto;
-    text-align:center;
+    text-align: center;
+    background-image: url("../img/plat.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
     user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -65,11 +80,20 @@ body{
     -ms-user-select: none;
 }
 
-.platform img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#inc_speed_id {
+    color: #ff0000
+}
 
+#dec_speed_id {
+    color:#00ff00
+}
+
+#inc_size_id {
+    color:#ff0000
+}
+
+#dec_size_id {
+    color:#00ff00
 }
 
 

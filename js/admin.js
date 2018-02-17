@@ -3,7 +3,7 @@ function getRandomInt(max) {
 }
 
 function createGameDb(z) {
-    var s =  getRandomInt(200) + 200
+    var s =  getRandomInt(200) + 50
     if (z == true) {
         database.ref('lobby').set({
             host: "admin",
@@ -24,8 +24,8 @@ function createGameDb(z) {
 
 window.gameRunner = function () {
     createGameDb(false)
-    setTimeout(function(){createGameDb(true);}, 5000)
-    setTimeout(function(){gameRunner();}, 60000)
+    setTimeout(function(){createGameDb(true);}, 10000)
+    setTimeout(function(){gameRunner();}, 35000)
 }
 
 gameRunner()

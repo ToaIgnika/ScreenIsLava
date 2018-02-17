@@ -2,6 +2,7 @@
 
 .lava > div {
     position: absolute;
+    z-index: 10;
 }
 
 /* The waterfall loop
